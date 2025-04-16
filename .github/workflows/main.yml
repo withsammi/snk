@@ -11,7 +11,6 @@ jobs:
       - uses: oven-sh/setup-bun@v1
 
       - run: bun install --frozen-lockfile
-
       - run: npm run type
       - run: npm run lint
       - run: bun test
@@ -31,7 +30,7 @@ jobs:
         id: generate-snake
         uses: ./
         with:
-          github_user_name: platane
+          github_user_name: withsammi
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
@@ -69,7 +68,7 @@ jobs:
         id: generate-snake
         uses: ./svg-only
         with:
-          github_user_name: platane
+          github_user_name: withsammi
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
